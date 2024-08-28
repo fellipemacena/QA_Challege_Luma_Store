@@ -22,11 +22,33 @@ Para o desenvolvido deste projeto além da instalação do Cypress, os testes fo
 
 Para o BDD (Behavior Driven Development), foi utilizada a própria estrutura do Cypress describe, context e it, onde o Describe foi utilizado para "feature", context para "given" e "when" e o it para "when", 'and" e "then".
 
-Projeto desenvolvido em Page Object Model (POM), 
-DESCREVER ESTRUTURA, ORGANIZAÇÃO E ARQUIVOS DE TIPOS(ALÉM DA DISTRIBUIÇÃO DOS DESAFIOS E DIFERENCIAIS)
+Exemplo de BDD no teste:
 
-Além disso, o rodar o teste em modo headless digitando npx cypress run serão gerados relatórios em html e em vídeo, além de screenshot de erro caso ocorra.
-Os arquivos de teste em html ficam na pasta *\MetaLumaStore\cypress\report,os arquivos de vídeo ficam na pasta *\MetaLumaStore\cypress\videos e os screenshots ficam na pasta *\MetaLumaStore\cypress\screenshots
+![image](https://github.com/user-attachments/assets/83b44c50-6023-46dd-b60d-13e88ca42534)
+
+
+Projeto desenvolvido no padrão Page Object Model (POM), abaixo segue estrutura da árvore.
+
+![image](https://github.com/user-attachments/assets/3f2c333a-bb3c-4b86-879e-2d3c5097a398)
+
+A pasta page elements responsável por armazenas e organizar os seletores, page actions agrupamento dos métodos, todos os métodos das ações são concentrados nela e a pasta page serve para manipulação e abstração, uma camada de interface entre a action e o arquivo de teste.
+
+Os arquivos de testes são 1_LumaStoreTest.spec.js, 2_LumaStoreTest_Cadastro.spec.js e 3_LumaStoreTest_Men.spec.js. A ordenação numérica facilita a busca pelos arquivos e a visualização da ordem de execução conforme requisito do desafio.
+
+O arquivo  1_LumaStoreTest.spec.js atende aos requisitos :
+* Obrigatório 2 - Valida carregamento Home Page
+* Obrigatório 2 - Busca Shirt Meu superior + Diferencial 1
+* Obrigatório 2 - Adicionar um produto no carrinho
+* Obrigatório 2 - Realizar checkout
+
+O arquivo 2_LumaStoreTest_Cadastro.spec.js atende ao requisito Diferencial 2:Criar uma conta na tela de Login/Cadastro
+
+O arquivo 3_LumaStoreTest_Men.spec.js atende aos requisito Diferencial 3 e 4, onde deve-se adicionar um produto aleatório da seção masculina e realizar um comentário
+
+O Diferencial 5 foi atendido por meio da implementação dos relatórios tanto de vídeo, foto e HTML
+
+Além disso, ao rodar o teste em modo headless digitando npx cypress run serão gerados relatórios em html e em vídeo, além de screenshot de erro caso ocorra.
+Os arquivos de teste em HTML ficam na pasta *\MetaLumaStore\cypress\report,os arquivos de vídeo ficam na pasta *\MetaLumaStore\cypress\videos e os screenshots ficam na pasta *\MetaLumaStore\cypress\screenshots
 ***************************************************************************************************************
 Para instalação do Cypress e demais plugins é necessário seguir os seguintes passos:
 1) Tenha instalado na sua máquina o node.js
