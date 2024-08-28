@@ -58,20 +58,25 @@ Para instalação do Cypress e demais plugins é necessário seguir os seguintes
 5) Após concluir a instalação do node
 6) Digite: npm install cypress@13.13.3 --save-dev
 7) Após concluir a instalação do cypress
-8) Digite:npx cypress open
-9) Assim o Cypress será executado pela primeira vez e irá instalar os demais arquivos necessários
-10) Ao acessar sua interface clique em E2E Testing
-11) Selecione uma das opções de browser
-12) Após abrir uma segunda janela irá se deparar com os arquivos de teste
-13) Feche a Janela
-14) Abra o terminal novamente
-15) Digite: npm install @cypress/webpack-preprocessor@6.0.2 --save-dev
-16) Após concluir a instalação
-17) Digite: npm install cypress-mochawesome-reporter@3.8.2 --save-dev
+8) Digite yarn install
+9) Após concluir a instalação
+10) Digite:npx cypress open ou yarn cypress open
+11) Assim o Cypress será executado pela primeira vez e irá instalar os demais arquivos necessários
+12) Ao acessar sua interface clique em E2E Testing
+13) Selecione uma das opções de browser
+14) Após abrir uma segunda janela irá se deparar com os arquivos de teste
+15) Feche a Janela
+16) Abra o terminal novamente
+17) Digite: npm install @cypress/webpack-preprocessor@6.0.2 --save-dev
 18) Após concluir a instalação
-19) O próximo plugin é opcional, pois ele permite habilitar ou desabilitar o log de requisições XHR e fetch,e assim, o Cypress fica menos poluído com a quantidade de requisições em tela. Caso queira instalar siga com o passo 20
-20) Digite: npm install cypress-plugin-xhr-toggle@1.2.1 --save-dev
-21) As configurações para o report Mochawesome e modo headless já estão nos arquivos cypress.config.js e package.json
+19) Digite: npm install cypress-mochawesome-reporter@3.8.2 --save-dev
+20) Após concluir a instalação
+21) O próximo plugin é opcional, pois ele permite habilitar ou desabilitar o log de requisições XHR e fetch,e assim, o Cypress fica menos poluído com a quantidade de requisições em tela. Caso queira instalar siga com o passo 20
+22) Digite: npm install cypress-plugin-xhr-toggle@1.2.1 --save-dev
+23) As configurações para o report Mochawesome e modo headless já estão nos arquivos cypress.config.js e package.json
+24) Para rodar o teste em modo headless use npx run cypress, assim poderá rodar os testes sem aparecer a tela do browser e ainda ter a geração de relatório
+25) Para rodar os testes com a visualização digite npx cypress open ou yarn cypress open
+
 
 ***************************************************************************************************************
 
